@@ -10,9 +10,9 @@ def parse_config():
     parser = argparse.ArgumentParser(description='arg parser')
     parser.add_argument('--result_dir', type=str, default=None,
                         help='the path to your result folder')
-    parser.add_argument('--label_dir', type=str, default='../kitti/training/label_2',
+    parser.add_argument('--label_dir', type=str, default='kitti/training/label_2',
                         help='the path to the ground truth label folder')
-    parser.add_argument('--label_split_file', type=str, default='../kitti/training/ImageSets/val.txt',
+    parser.add_argument('--label_split_file', type=str, default='kitti/training/ImageSets/val.txt',
                         help='the path to the dataset split file')
     parser.add_argument('--current_classes', type=str, default='0,1,2',
                         help='a filter for desired classes, e.g., 0,1,2 (split by a comma)')
